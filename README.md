@@ -1,6 +1,7 @@
 # PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)
 PETIR adalah sebuah aplikasi untuk melayani penumpang atau pengguna transportasi umum di Indonesia dengan pembelian tiket yang sudah terintegrasi oleh sistem.
 
+## Deskripsi Program
 ## 1. Implementasi Sistem Basis Data (SBD)
 
 ### 1.1. ERD

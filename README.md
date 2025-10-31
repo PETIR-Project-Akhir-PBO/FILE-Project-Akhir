@@ -1,5 +1,7 @@
-<img width="838" height="140" alt="image" src="https://github.com/user-attachments/assets/69963330-926b-41f2-b5c5-b0f80194de3f" /># ⚡PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)🚆
+# ⚡PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)🚆
 PETIR adalah sebuah aplikasi untuk melayani penumpang atau pengguna transportasi umum di Indonesia dengan pembelian tiket yang sudah terintegrasi oleh sistem.
+![WhatsApp Image 2025-10-30 at 19 47 23_89bde9b2](https://github.com/user-attachments/assets/9a9a7a3f-4bde-4660-8a31-b45a1454a9b1)
+
 
 ## ⚙️ Deskripsi Program 
 PETIR (Pelayanan Transportasi Terintegrasi) adalah aplikasi tiket terpadu untuk transportasi umum di Indonesia. Pengguna bisa merencanakan rute lintas moda dan membeli tiket dalam satu platform, sehingga perjalanan lebih cepat, mudah, dan terjangkau. PETIR mendukung SDG 11 (Sustainable Cities & Communities) dengan mengurangi ketergantungan kendaraan pribadi, kemacetan, dan emisi.

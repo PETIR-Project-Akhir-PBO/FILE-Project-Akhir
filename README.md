@@ -1,111 +1,217 @@
-# ⚡PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)🚆
-PETIR adalah sebuah aplikasi untuk melayani penumpang atau pengguna transportasi umum di Indonesia dengan pembelian tiket yang sudah terintegrasi oleh sistem.
-![WhatsApp Image 2025-10-30 at 19 47 23_89bde9b2](https://github.com/user-attachments/assets/9a9a7a3f-4bde-4660-8a31-b45a1454a9b1)
+# PETIR (Pelayanan Transportasi terintegrasi)
 
+## 1. Deskripsi Program
 
-## ⚙️ Deskripsi Program 
-PETIR (Pelayanan Transportasi Terintegrasi) adalah aplikasi tiket terpadu untuk transportasi umum di Indonesia. Pengguna bisa merencanakan rute lintas moda dan membeli tiket dalam satu platform, sehingga perjalanan lebih cepat, mudah, dan terjangkau. PETIR mendukung SDG 11 (Sustainable Cities & Communities) dengan mengurangi ketergantungan kendaraan pribadi, kemacetan, dan emisi.
+Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang terhubung dengan database MySQL. Sistem ini dirancang untuk mengelola proses administrasi tiket, jadwal, rute, dan data transportasi secara terintegrasi antara admin dan penumpang.
+Program ini memiliki dua peran utama yaitu Admin dan Penumpang. Admin dapat menambah, mengubah, dan menghapus data tiket, sedangkan penumpang dapat melihat, mencari, dan membeli tiket sesuai rute dan jadwal yang tersedia.
+Seluruh komponen dalam sistem PETIR dibangun menggunakan pendekatan Object-Oriented Programming (OOP) secara menyeluruh untuk memastikan keamanan, efisiensi, serta kemudahan pengembangan di masa mendatang.
 
-## 🔍 Fitur Utama
-Aplikasi PETIR (Pelayanan Transportasi Terintegrasi) memiliki fitur utama seperti login dan registrasi pengguna, serta dua peran yaitu admin dan penumpang. Admin dapat mengelola data tiket, rute, dan jadwal, sedangkan penumpang dapat melihat dan membeli tiket dengan mudah menggunakan saldo digital. Semua data tersimpan dalam database terintegrasi, sehingga layanan transportasi menjadi lebih efisien dan praktis.
+## 2. Fitur Program
 
-## 🌟 Penerapan 5 pilar OOP 
-### ⤷ Encapsulation
-Pada class Pengguna, encapsulation diterapkan dengan menyembunyikan data di dalam class (menggunakan protected) dan menyediakan akses terkontrol lewat getter dan setter. Dengan begitu, data tidak bisa diubah sembarangan dari luar, setiap perubahan harus lewat method yang disediakan, sehingga keamanan dan konsistensi data tetap terjaga.
+### 1. Login dan Registrasi Akun
+Pengguna dapat melakukan login sebagai admin atau penumpang, serta mendaftarkan akun baru ke dalam sistem.
 
-> <img width="876" height="786" alt="image" src="https://github.com/user-attachments/assets/02b3d57c-8533-4365-9229-f8f0a78f5d50" />
+### 2. Fitur Admin
 
-### ⤷ Abstraction
-Class Pengguna disebut abstrak karena berfungsi sebagai kerangka dasar bagi class lain. Class ini tidak bisa dibuat objeknya langsung, tapi memberikan dasar seperti data dan struktur umum yang nantinya akan diwarisi dan dilengkapi oleh class turunannya.
+Melihat seluruh daftar tiket
 
-> <img width="445" height="146" alt="image" src="https://github.com/user-attachments/assets/bb8f0ebf-5f3a-40f3-8900-1909ceb30bea" />
+Menambahkan tiket baru dengan data asal, tujuan, jenis transportasi, harga, dan jadwal keberangkatan
 
+Mengedit tiket yang telah ada
 
-### ⤷ Inheritance
-Pada dua gambar tersebut, konsep inheritance diterapkan karena class Admin mewarisi (extends) class Pengguna atau Person. Artinya, Admin otomatis mendapatkan semua data dan fungsi yang ada di class induk tanpa harus menulis ulang.
+Menghapus tiket yang tidak digunakan
 
-> <img width="605" height="155" alt="image" src="https://github.com/user-attachments/assets/07275657-36ee-44da-b9ec-f1442a42318b" />
+Melihat data pendukung (rute, jadwal, dan transportasi)
 
-> <img width="521" height="71" alt="image" src="https://github.com/user-attachments/assets/afeb84b5-be84-486f-95bc-def7d20618f3" />
+### 3. Fitur Penumpang
 
-### ⤷ Polymorphism
-### ⤷ Interface
-Interface Cetak digunakan sebagai template atau aturan dasar yang harus diikuti oleh kelas lain. Di dalamnya hanya ada deklarasi method tanpa isi, yaitu printInfo(). Kelas lain yang menggunakan interface ini, seperti Admin, Penumpang, dan Tiket, wajib membuat isi dari method tersebut
+Melihat daftar tiket yang tersedia
 
-> <img width="371" height="129" alt="image" src="https://github.com/user-attachments/assets/39034578-551e-4c46-b22e-1f5c33ead246" />
+Mencari tiket berdasarkan asal, tujuan, atau jenis transportasi
 
-## 📦 Packages
+Membeli tiket secara langsung dari sistem
 
-> <img width="306" height="146" alt="image" src="https://github.com/user-attachments/assets/9baf0b3b-7c68-4f1b-95db-afe89ee8a2e5" />
+Melihat dan mengatur saldo akun
 
+### 4. Koneksi Database Otomatis
+Sistem terhubung dengan MySQL Database melalui kelas DatabaseConnection yang akan memastikan setiap transaksi berjalan aman dan konsisten.
 
-### ⤷ ConnectDB
+### 5. Tampilan Data Terstruktur
+Seluruh data tiket ditampilkan dalam format tabel dengan kolom utama: No, Asal - Tujuan, Transportasi, Harga, dan Jadwal.
 
-Package ini berfungsi untuk menghubungkan program dengan database. File DatabaseConnection.java digunakan supaya koneksi ke MySQL bisa dilakukan dengan mudah dan terpusat.
+## 3. Penerapan 5 pilar OOP
 
-> <img width="347" height="58" alt="image" src="https://github.com/user-attachments/assets/000d03e7-c744-4bd9-82f6-265c867ad54a" />
+Program ini menerapkan 5 pilar utama Pemrograman Berorientasi Objek (OOP) sebagai berikut:
 
-### ⤷ DAO
+### 1. Encapsulation
 
-Package ini digunakan untuk mengelola proses pengambilan dan penyimpanan data ke database.
+Encapsulation diterapkan dengan menjadikan atribut-atribut pada Package Model di dalam Class Pengguna, penumpang, dan Admin bersifat private, kemudian diakses melalui getter dan setter.
+Hal ini memastikan data tidak bisa diubah secara langsung dari luar class dan menjaga keamanan data objek tiket.
 
-> <img width="329" height="218" alt="image" src="https://github.com/user-attachments/assets/9fb99d29-061d-40b9-95bb-ab7dc3f08331" />
+``` bash
+package Model;
 
-Penjelasan masing-masing kelas:
-- AdminDAO.java
-Mengelola data admin: tambah, ubah, hapus, cari admin serta validasi login admin.
-- JadwalDAO.java
-Mengatur data jadwal keberangkatan/kedatangan: simpan, update, hapus, ambil jadwal per rute/transportasi.
-- PenggunaDAO.java
-Akses umum untuk data pengguna (induk): cek akun, ambil data dasar pengguna.
-- PenumpangDAO.java
-Operasi khusus penumpang: buat akun, ubah profil, hapus akun, cari penumpang, dan atur saldo.
-- RuteDAO.java
-Kelola data rute: asal–tujuan, tambah/ubah/hapus rute, serta ambil daftar rute untuk kebutuhan tiket/jadwal.
-- TiketDAO.java
-Proses tiket: tampilkan tiket tersedia (join rute/jadwal/transportasi), simpan pembelian, update status, hapus/cari tiket.
-- TransportasiDAO.java
-Data moda transportasi: tambah/ubah/hapus jenis/nama transportasi dan ambil daftar transportasi yang aktif.
+public abstract class Pengguna {
+    protected int id;
+    protected String nama;
+    protected String password;
+    protected String noTelp;
 
-### ⤷ Main
+    public Pengguna(int id, String nama, String password, String noTelp) {
+        this.id = id;
+        this.nama = nama;
+        this.password = password;
+        this.noTelp = noTelp;
+    }
 
-Berisi kelas utama untuk menjalankan aplikasi.
-> <img width="342" height="63" alt="image" src="https://github.com/user-attachments/assets/4ee70847-da68-4ac1-a615-ff58d485d136" />
+    public int getId() {
+        return id;
+    }
 
-### ⤷ Model
+    public void setId(int id) {
+        this.id = id;
+    }
 
-Package ini menampung bentuk data dan aturannya, yang nanti dipakai oleh bagian lain (DAO/Service) untuk proses ke database dan fitur aplikasi.
+    public String getNama() {
+        return nama;
+    }
 
-> <img width="313" height="273" alt="image" src="https://github.com/user-attachments/assets/887819ab-a7c0-4da5-824c-24ebc523fa17" />
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
 
-Penjelasan masing-masing kelas:
-- Admin.java – Representasi admin turunan Pengguna, punya atribut/fitur khusus admi, dan implementasi printInfo().
-- Cetak.java – Interface berisi kontrak printInfo() yang wajib diisi oleh kelas yang mengimplementasikannya (Admin, Penumpang, Tiket).
-- Jadwal.java – Menyimpan info jadwal keberangkatan/kedatangan untuk suatu rute/transportasi.
-- Pengguna.java – (Abstrak) Kerangka dasar pengguna: menyimpan data umum (id, nama, dll.) + getter/setter.
-- Penumpang.java – Turunan Pengguna punya atribut saldo dan implementasi printInfo().
-- Person.java – (Abstrak) Superclass umum untuk pengguna; mendefinisikan kontrak getRole() dan printInfo().
-- Rute.java – Menyimpan data rute (asal–tujuan) yang dipakai tiket/jadwal.
-- Tiket.java – Representasi tiket berisi relasi ke rute, transportasi, jadwal, harga juga implements Cetak.
-- Transportasi.java – Menyimpan data moda/jenis transportasi (nama, tipe, dll.).
+    public String getPassword() {
+        return password;
+    }
 
-### ⤷ Service
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-Berisi logika bisnis aplikasi, penghubung antara DAO (akses database) dan Main/UI.
+    public String getNoTelp() {
+        return noTelp;
+    }
 
-> <img width="237" height="61" alt="image" src="https://github.com/user-attachments/assets/42611ae9-6856-4afa-99bd-98e362703720" />
+    public void setNoTelp(String noTelp) {
+        this.noTelp = noTelp;
+    }
 
-Penjelasan kelas: 
-Menangani proses inti seperti login/registrasi, pengelolaan rute–jadwal–transportasi–tiket, pembelian tiket, dan top up saldo.
+    public abstract String getRole();
+    public abstract void printInfo();
+}
 
-### Libraries
-## 🌟Penerapan Nilai Tambah
-## ✨Flowchart & Use Case
+```
 
-https://drive.google.com/file/d/1d2nZd2LBsXqt7vMg5msKEKFUV3cGjoxy/view?usp=sharing
+### 2. Inheritance
+Kelas Admin dan Penumpang merupakan subclass dari kelas abstract Pengguna.
+Melalui pewarisan ini, kedua kelas tersebut mewarisi atribut dan metode umum seperti id, nama, password, dan noTelp.
 
-## Slide Decks
+``` bash
+package Model;
 
-## 💻 Alur Program & GUI ⚡
+public class Admin extends Pengguna {
+    private String akses;
 
+    public Admin(int id, String nama, String password, String noTelp, String akses) {
+        super(id, nama, password, noTelp);
+        this.akses = akses;
+    }
+```
 
+``` bash
+package Model;
+
+public class Penumpang extends Pengguna {
+    private int saldo;
+
+    public Penumpang(int id, String nama, String password, String noTelp, int saldo) {
+        super(id, nama, password, noTelp);
+        this.saldo = saldo;
+    }
+```
+
+### 3. Abstraction
+Kelas Pengguna bersifat abstract dan berfungsi sebagai kerangka umum untuk berbagai jenis pengguna.
+Implementasi detail metode yang sesuai diberikan pada kelas Admin dan Penumpang agar setiap tipe pengguna memiliki perilaku yang berbeda.
+
+``` bash
+package Model;
+
+public abstract class Pengguna {
+    protected int id;
+    protected String nama;
+    protected String password;
+    protected String noTelp;
+```
+
+### 4. Polymorphism
+Program ini menggunakan konsep polimorfisme dalam pemanggilan metode yang sama melalui referensi bertipe Pengguna.
+Objek yang digunakan dapat berupa Admin atau Penumpang, dan metode yang dijalankan akan menyesuaikan dengan tipe objek tersebut.
+
+``` bash
+    @Override
+    public String getRole() { return "Admin"; }
+
+    @Override
+    public void printInfo() {
+        System.out.println("[Admin] " + nama + " | akses: " + akses);
+    }
+```
+
+``` bash
+    @Override
+    public String getRole() { return "Penumpang"; }
+
+    @Override
+    public void printInfo() {
+        System.out.println("[Penumpang] " + nama + " | Saldo: Rp" + saldo);
+    }
+```
+
+### 5. Interface
+Interface Cetak digunakan untuk menyeragamkan metode printInfo() pada beberapa kelas seperti Tiket, Transportasi, dan Rute.
+Dengan penerapan ini, setiap kelas wajib menampilkan informasi data secara terstandarisasi sesuai ketentuan interface.
+
+``` bash
+package Model;
+
+public interface Cetak {
+    void printInfo();
+}
+```
+
+## 4. Struktur Folder / Package
+Dibawah ini adalah Struktur Folder dan Package
+
+``` bash
+src/
+ ├── Main/
+ │    └── Main.java
+ ├── ConnectDB/
+ │    └── DatabaseConnection.java
+ ├── Model/
+ │    ├── Cetak.java
+ │    ├── Pengguna.java
+ │    ├── Admin.java
+ │    ├── Penumpang.java
+ │    ├── Transportasi.java
+ │    ├── Rute.java
+ │    ├── Jadwal.java
+ │    └── Tiket.java
+ ├── DAO/
+ │    ├── PenggunaDAO.java
+ │    ├── AdminDAO.java
+ │    ├── PenumpangDAO.java
+ │    ├── TransportasiDAO.java
+ │    ├── RuteDAO.java
+ │    ├── JadwalDAO.java
+ │    └── TiketDAO.java
+ └── Service/
+      └── Service.java
+```
+
+Foto Struktur Package dari Neatbeans
+
+``` bash
+<img width="575" height="559" alt="image" src="https://github.com/user-attachments/assets/9dc30fea-889b-4cf3-a129-e1f436b0cbec" />
+```

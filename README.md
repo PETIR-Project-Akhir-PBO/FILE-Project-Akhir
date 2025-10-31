@@ -37,13 +37,13 @@ Interface Cetak digunakan sebagai template atau aturan dasar yang harus diikuti 
 <img width="306" height="146" alt="image" src="https://github.com/user-attachments/assets/9baf0b3b-7c68-4f1b-95db-afe89ee8a2e5" />
 
 
-⤷ ConnectDB
+### ⤷ ConnectDB
 
 Package ini berfungsi untuk menghubungkan program dengan database. File DatabaseConnection.java digunakan supaya koneksi ke MySQL bisa dilakukan dengan mudah dan terpusat.
 
 > <img width="347" height="58" alt="image" src="https://github.com/user-attachments/assets/000d03e7-c744-4bd9-82f6-265c867ad54a" />
 
-⤷ DAO
+### ⤷ DAO
 
 Package ini digunakan untuk mengelola proses pengambilan dan penyimpanan data ke database.
 
@@ -65,12 +65,12 @@ Proses tiket: tampilkan tiket tersedia (join rute/jadwal/transportasi), simpan p
 - TransportasiDAO.java
 Data moda transportasi: tambah/ubah/hapus jenis/nama transportasi dan ambil daftar transportasi yang aktif.
 
-⤷ Main
+### ⤷ Main
 
 Berisi kelas utama untuk menjalankan aplikasi.
 > <img width="342" height="63" alt="image" src="https://github.com/user-attachments/assets/4ee70847-da68-4ac1-a615-ff58d485d136" />
 
-⤷ Model
+### ⤷ Model
 
 Package ini menampung bentuk data dan aturannya, yang nanti dipakai oleh bagian lain (DAO/Service) untuk proses ke database dan fitur aplikasi.
 
@@ -87,7 +87,7 @@ Penjelasan masing-masing kelas:
 - Tiket.java – Representasi tiket berisi relasi ke rute, transportasi, jadwal, harga juga implements Cetak.
 - Transportasi.java – Menyimpan data moda/jenis transportasi (nama, tipe, dll.).
 
-⤷ Service
+### ⤷ Service
 
 Berisi logika bisnis aplikasi, penghubung antara DAO (akses database) dan Main/UI.
 

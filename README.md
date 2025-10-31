@@ -95,11 +95,16 @@ Berisi logika bisnis aplikasi, penghubung antara DAO (akses database) dan Main/U
 
 Penjelasan kelas: 
 Menangani proses inti seperti login/registrasi, pengelolaan rute–jadwal–transportasi–tiket, pembelian tiket, dan top up saldo.
-### 1.2. DATABASE
 
-## 2. Implementasi Pemerograman Berorientasi Objek (PBO)
+### Libraries
+## 🌟Penerapan Nilai Tambah
+## ✨Flowchart & Use Case
 
-### 2.1. FLOWCHART dan USE CASE
+https://drive.google.com/file/d/1d2nZd2LBsXqt7vMg5msKEKFUV3cGjoxy/view?usp=sharing
+
+## Slide Decks
+
+## 💻 Alur Program & GUI ⚡
 
 #### 2.1.1. FLOWCHART
 

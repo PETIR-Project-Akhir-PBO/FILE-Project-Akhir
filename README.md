@@ -212,6 +212,4 @@ src/
 
 Foto Struktur Package dari Neatbeans
 
-``` bash
 <img width="575" height="559" alt="image" src="https://github.com/user-attachments/assets/9dc30fea-889b-4cf3-a129-e1f436b0cbec" />
-```

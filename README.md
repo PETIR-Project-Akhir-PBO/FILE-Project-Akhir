@@ -16,19 +16,36 @@ Pada class Pengguna, encapsulation diterapkan dengan menyembunyikan data di dala
 ### 🎀 Abstraction
 Class Pengguna disebut abstrak karena berfungsi sebagai kerangka dasar bagi class lain. Class ini tidak bisa dibuat objeknya langsung, tapi memberikan dasar seperti data dan struktur umum yang nantinya akan diwarisi dan dilengkapi oleh class turunannya.
 
- <img width="445" height="146" alt="image" src="https://github.com/user-attachments/assets/bb8f0ebf-5f3a-40f3-8900-1909ceb30bea" />
+> <img width="445" height="146" alt="image" src="https://github.com/user-attachments/assets/bb8f0ebf-5f3a-40f3-8900-1909ceb30bea" />
 
 
 ### 🎀 Inheritance
 Pada dua gambar tersebut, konsep inheritance diterapkan karena class Admin mewarisi (extends) class Pengguna atau Person. Artinya, Admin otomatis mendapatkan semua data dan fungsi yang ada di class induk tanpa harus menulis ulang.
 
-<img width="605" height="155" alt="image" src="https://github.com/user-attachments/assets/07275657-36ee-44da-b9ec-f1442a42318b" />
+> <img width="605" height="155" alt="image" src="https://github.com/user-attachments/assets/07275657-36ee-44da-b9ec-f1442a42318b" />
 
-<img width="521" height="71" alt="image" src="https://github.com/user-attachments/assets/afeb84b5-be84-486f-95bc-def7d20618f3" />
+> <img width="521" height="71" alt="image" src="https://github.com/user-attachments/assets/afeb84b5-be84-486f-95bc-def7d20618f3" />
 
 ### 🎀 Polymorphism
 ### 🎀 Interface
-### 1.1. ERD
+Interface Cetak digunakan sebagai template atau aturan dasar yang harus diikuti oleh kelas lain. Di dalamnya hanya ada deklarasi method tanpa isi, yaitu printInfo(). Kelas lain yang menggunakan interface ini, seperti Admin, Penumpang, dan Tiket, wajib membuat isi dari method tersebut
+
+> <img width="371" height="129" alt="image" src="https://github.com/user-attachments/assets/39034578-551e-4c46-b22e-1f5c33ead246" />
+
+## 📦 Packages
+
+<img width="306" height="146" alt="image" src="https://github.com/user-attachments/assets/9baf0b3b-7c68-4f1b-95db-afe89ee8a2e5" />
+
+###  ConnectDB
+Package ini berfungsi untuk menghubungkan program dengan database. File DatabaseConnection.java digunakan supaya koneksi ke MySQL bisa dilakukan dengan mudah dan terpusat.
+
+> <img width="347" height="58" alt="image" src="https://github.com/user-attachments/assets/000d03e7-c744-4bd9-82f6-265c867ad54a" />
+
+###  DAO
+
+> <img width="329" height="218" alt="image" src="https://github.com/user-attachments/assets/9fb99d29-061d-40b9-95bb-ab7dc3f08331" />
+
+
 
 ### 1.2. DATABASE
 

@@ -43,8 +43,24 @@ Package ini berfungsi untuk menghubungkan program dengan database. File Database
 
 ###  DAO
 
-> <img width="329" height="218" alt="image" src="https://github.com/user-attachments/assets/9fb99d29-061d-40b9-95bb-ab7dc3f08331" />
+Package ini digunakan untuk mengelola proses pengambilan dan penyimpanan data ke database.
 
+> <img width="329" height="218" alt="image" src="https://github.com/user-attachments/assets/9fb99d29-061d-40b9-95bb-ab7dc3f08331" />
+- AdminDAO.java
+Mengelola data admin: tambah, ubah, hapus, cari admin serta validasi login admin.
+- JadwalDAO.java
+Mengatur data jadwal keberangkatan/kedatangan: simpan, update, hapus, ambil jadwal per rute/transportasi.
+- PenggunaDAO.java
+Akses umum untuk data pengguna (induk): cek akun, ambil data dasar pengguna.
+- PenumpangDAO.java
+Operasi khusus penumpang: buat akun, ubah profil, hapus akun, cari penumpang, dan atur saldo.
+- RuteDAO.java
+Kelola data rute: asal–tujuan, tambah/ubah/hapus rute, serta ambil daftar rute untuk kebutuhan tiket/jadwal.
+- TiketDAO.java
+Proses tiket: tampilkan tiket tersedia (join rute/jadwal/transportasi), simpan pembelian, update status, hapus/cari tiket.
+
+- TransportasiDAO.java
+Data moda transportasi: tambah/ubah/hapus jenis/nama transportasi dan ambil daftar transportasi yang aktif.
 
 
 ### 1.2. DATABASE

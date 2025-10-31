@@ -1,4 +1,4 @@
-# ⚡PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)🚆
+<img width="838" height="140" alt="image" src="https://github.com/user-attachments/assets/69963330-926b-41f2-b5c5-b0f80194de3f" /># ⚡PETIR (PELAYANAN TRANSPORTASI TERINTEGRASI)🚆
 PETIR adalah sebuah aplikasi untuk melayani penumpang atau pengguna transportasi umum di Indonesia dengan pembelian tiket yang sudah terintegrasi oleh sistem.
 
 ## ⚙️ Deskripsi Program 
@@ -7,7 +7,7 @@ PETIR (Pelayanan Transportasi Terintegrasi) adalah aplikasi tiket terpadu untuk 
 ## 🔍 Fitur Utama
 Aplikasi PETIR (Pelayanan Transportasi Terintegrasi) memiliki fitur utama seperti login dan registrasi pengguna, serta dua peran yaitu admin dan penumpang. Admin dapat mengelola data tiket, rute, dan jadwal, sedangkan penumpang dapat melihat dan membeli tiket dengan mudah menggunakan saldo digital. Semua data tersimpan dalam database terintegrasi, sehingga layanan transportasi menjadi lebih efisien dan praktis.
 
-## 🎀 Penerapan 5 pilar OOP
+## 🌟 Penerapan 5 pilar OOP 
 ### ⤷ Encapsulation
 Pada class Pengguna, encapsulation diterapkan dengan menyembunyikan data di dalam class (menggunakan protected) dan menyediakan akses terkontrol lewat getter dan setter. Dengan begitu, data tidak bisa diubah sembarangan dari luar, setiap perubahan harus lewat method yang disediakan, sehingga keamanan dan konsistensi data tetap terjaga.
 
@@ -34,7 +34,7 @@ Interface Cetak digunakan sebagai template atau aturan dasar yang harus diikuti 
 
 ## 📦 Packages
 
-<img width="306" height="146" alt="image" src="https://github.com/user-attachments/assets/9baf0b3b-7c68-4f1b-95db-afe89ee8a2e5" />
+> <img width="306" height="146" alt="image" src="https://github.com/user-attachments/assets/9baf0b3b-7c68-4f1b-95db-afe89ee8a2e5" />
 
 
 ### ⤷ ConnectDB
@@ -91,7 +91,7 @@ Penjelasan masing-masing kelas:
 
 Berisi logika bisnis aplikasi, penghubung antara DAO (akses database) dan Main/UI.
 
-<img width="237" height="61" alt="image" src="https://github.com/user-attachments/assets/42611ae9-6856-4afa-99bd-98e362703720" />
+> <img width="237" height="61" alt="image" src="https://github.com/user-attachments/assets/42611ae9-6856-4afa-99bd-98e362703720" />
 
 Penjelasan kelas: 
 Menangani proses inti seperti login/registrasi, pengelolaan rute–jadwal–transportasi–tiket, pembelian tiket, dan top up saldo.

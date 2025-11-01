@@ -213,3 +213,146 @@ src/
 Foto Struktur Package dari Neatbeans
 
 <img width="575" height="559" alt="image" src="https://github.com/user-attachments/assets/9dc30fea-889b-4cf3-a129-e1f436b0cbec" />
+
+## 5. Antarmuka Program (GUI)
+
+Program PETIR (Program Transportasi Terintegrasi) memiliki antarmuka grafis berbasis Java Swing yang dirancang dengan pendekatan clean design, menggunakan kombinasi warna hijau muda dan putih untuk menciptakan tampilan yang tenang, ringan, dan konsisten.
+Setiap halaman memiliki tata letak yang seragam, font yang mudah dibaca, serta tombol-tombol dengan fungsi yang jelas untuk memudahkan navigasi pengguna.
+
+### 1. Halaman Login
+
+
+![LoginPage](https://github.com/user-attachments/assets/965ad8c1-dd05-4373-a5b9-626123541dba)
+
+
+Halaman login adalah tampilan pertama saat aplikasi dijalankan.
+Bagian kiri jendela menampilkan ikon bus berwarna putih dengan latar gradien hijau muda dan teks “Selamat Datang di Aplikasi PETIR”.
+Bagian kanan berisi panel login dengan komponen sebagai berikut:
+
+Label Log In sebagai judul.
+
+Kolom Masukkan username...
+
+Kolom Masukkan password...
+
+Checkbox Tampilkan password untuk menampilkan atau menyembunyikan karakter password.
+
+Tombol Login untuk masuk ke dalam aplikasi.
+
+Tombol Daftar Akun Baru untuk membuka halaman pendaftaran pengguna baru.
+
+Layout halaman ini sederhana dan intuitif, memastikan pengguna dapat memahami fungsi setiap elemen tanpa kebingungan.
+
+### 2. Halaman Daftar Akun Baru
+
+
+![RegisterPage](https://github.com/user-attachments/assets/a60477a2-2ac7-4d31-a8b6-611e4ad1a1ef)
+
+
+Halaman pendaftaran digunakan bagi pengguna baru yang ingin membuat akun di sistem PETIR.
+Antarmuka ini mempertahankan gaya visual yang sama dengan halaman login, memberikan konsistensi pengalaman pengguna.
+
+Formulir pendaftaran terdiri dari tiga kolom input:
+
+Nama – digunakan sebagai username untuk login.
+
+Password – digunakan untuk keamanan akun.
+
+Nomor HP – berfungsi sebagai identitas unik untuk membedakan pengguna meskipun nama sama.
+
+Di bagian bawah terdapat dua tombol:
+
+Batal untuk kembali ke halaman login tanpa menyimpan data.
+
+Buat Akun Baru untuk menyimpan data dan membuat akun jika semua input valid.
+
+Validasi dilakukan secara langsung di sisi program.
+Jika nomor HP sudah digunakan atau input tidak sesuai (misalnya terdapat spasi pada username atau password kosong), pengguna akan menerima pesan peringatan dengan penjelasan yang mudah dipahami.
+
+### 3. Dashboard Admin
+
+
+![AdminPage](https://github.com/user-attachments/assets/7c4ae524-7a14-4487-b0f3-d441efe174ed)
+
+Setelah login sebagai Admin, pengguna diarahkan ke Dashboard Admin.
+Bagian atas halaman menampilkan sapaan “Halo, [nama admin]”, serta tombol:
+
+Kembali untuk logout.
+
+Menambahkan Tiket untuk menambah data tiket baru.
+
+Edit Tiket untuk mengubah data tiket yang sudah ada.
+
+Hapus Tiket untuk menghapus data tiket tertentu.
+
+Di bawah area kontrol terdapat dua fitur tambahan:
+
+Dropdown Pilih Transportasi untuk memfilter data tiket berdasarkan jenis transportasi (Bus, Kereta, Travel, dan sebagainya).
+
+Kolom Pencarian untuk mencari tiket berdasarkan nama rute, tanggal, atau waktu keberangkatan.
+
+Tabel utama menampilkan data tiket secara terstruktur, dengan kolom:
+
+No (Nomor urut tiket)
+
+Tanggal keberangkatan
+
+Jam berangkat
+
+Jam tiba
+
+Nama rute (asal - tujuan)
+
+Nama transportasi dan jenis
+
+Harga tiket
+
+Admin dapat melihat seluruh daftar tiket sekaligus melakukan operasi CRUD (Create, Read, Update, Delete) secara langsung dari tampilan ini.
+
+### 4. Dashboard Pengguna
+
+![UserPage](https://github.com/user-attachments/assets/31d82d44-7af8-46c6-bcb8-9765294b59ea)
+
+
+Setelah login sebagai Penumpang, pengguna diarahkan ke Dashboard Pengguna.
+Bagian atas halaman menampilkan:
+
+Sapaan “Halo, [nama pengguna]”
+
+Informasi Saldo pengguna dalam format rupiah
+
+Tombol Top Up untuk menambah saldo
+
+Tombol Kembali untuk logout atau kembali ke menu sebelumnya
+
+Bagian utama layar berisi daftar tiket yang tersedia, ditampilkan dalam bentuk kartu tiket (card view).
+Setiap kartu menampilkan informasi:
+
+Rute perjalanan (asal dan tujuan)
+
+Jam berangkat dan tiba
+
+Titik awal dan akhir
+
+Tanggal keberangkatan
+
+Jenis dan nama transportasi
+
+Harga tiket dalam format rupiah
+
+Harga tiket ditampilkan dengan warna merah untuk menonjolkan aspek pembelian.
+Pengguna juga dapat melakukan pencarian tiket melalui kolom Cari dan memfilter berdasarkan jenis transportasi melalui dropdown di bagian atas.
+
+### 5. Desain Warna dan Navigasi
+
+Antarmuka PETIR mengadopsi palet warna hijau pastel dan putih, yang memberikan kesan lembut dan profesional.
+Warna utama hijau digunakan untuk tombol, panel utama, dan aksen teks, sedangkan latar belakang putih menjaga keterbacaan dan fokus pada data.
+Font yang digunakan berwarna hitam atau abu-abu tua dengan ukuran sedang, untuk kenyamanan membaca di layar laptop maupun monitor.
+
+Navigasi antar halaman dilakukan melalui tombol-tombol yang jelas:
+
+Halaman login menuju halaman dashboard sesuai peran pengguna (admin atau penumpang).
+
+Tombol Kembali terdapat di setiap halaman utama untuk memastikan pengguna dapat kembali ke halaman sebelumnya dengan mudah.
+
+Transisi antar halaman dilakukan secara langsung tanpa jeda, mempercepat pengalaman pengguna.

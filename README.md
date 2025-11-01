@@ -3,7 +3,7 @@
 
 ## ⚙ Deskripsi Program
 
-> Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang terhubung dengan database MySQL. Sistem ini dirancang untuk mengelola proses administrasi tiket, jadwal, rute, dan data transportasi secara terintegrasi antara admin dan penumpang.
+Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang terhubung dengan database MySQL. Sistem ini dirancang untuk mengelola proses administrasi tiket, jadwal, rute, dan data transportasi secara terintegrasi antara admin dan penumpang.
 Program ini memiliki dua peran utama yaitu Admin dan Penumpang. Admin dapat menambah, mengubah, dan menghapus data tiket, sedangkan penumpang dapat melihat, mencari, dan membeli tiket sesuai rute dan jadwal yang tersedia.
 Seluruh komponen dalam sistem PETIR dibangun menggunakan pendekatan Object-Oriented Programming (OOP) secara menyeluruh untuk memastikan keamanan, efisiensi, serta kemudahan pengembangan di masa mendatang.
 

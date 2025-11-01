@@ -1,4 +1,4 @@
-# ⚡ PETIR (Pelayanan Transportasi terintegrasi) 🚆
+# ⚡ PETIR (Pelayanan Transportasi terintegrasi) 🚉
 
 
 ## ⚙ Deskripsi Program

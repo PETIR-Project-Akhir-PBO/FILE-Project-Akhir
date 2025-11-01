@@ -7,12 +7,14 @@ Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang t
 Program ini memiliki dua peran utama yaitu Admin dan Penumpang. Admin dapat menambah, mengubah, dan menghapus data tiket, sedangkan penumpang dapat melihat, mencari, dan membeli tiket sesuai rute dan jadwal yang tersedia.
 Seluruh komponen dalam sistem PETIR dibangun menggunakan pendekatan Object-Oriented Programming (OOP) secara menyeluruh untuk memastikan keamanan, efisiensi, serta kemudahan pengembangan di masa mendatang.
 
-## ✨ Link Flowchart dan Usecase
+## ✨ Flowchart dan Usecase
 
 
 ``` bash
 https://drive.google.com/file/d/1vuFVS61Yx1Rh_dnzgd2hc7dsrvdid3cK/view?usp=sharing
 ```
+
+## ✨ Slide Decks
 
 ## 🔍 Fitur Program
 

@@ -6,7 +6,14 @@ Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang t
 Program ini memiliki dua peran utama yaitu Admin dan Penumpang. Admin dapat menambah, mengubah, dan menghapus data tiket, sedangkan penumpang dapat melihat, mencari, dan membeli tiket sesuai rute dan jadwal yang tersedia.
 Seluruh komponen dalam sistem PETIR dibangun menggunakan pendekatan Object-Oriented Programming (OOP) secara menyeluruh untuk memastikan keamanan, efisiensi, serta kemudahan pengembangan di masa mendatang.
 
-## 2. Fitur Program
+## 2. Link Flowchart dan Usecase
+
+
+``` bash
+https://drive.google.com/file/d/1vuFVS61Yx1Rh_dnzgd2hc7dsrvdid3cK/view?usp=sharing
+```
+
+## 3. Fitur Program
 
 ### 1. Login dan Registrasi Akun
 Pengguna dapat melakukan login sebagai admin atau penumpang, serta mendaftarkan akun baru ke dalam sistem.
@@ -39,7 +46,7 @@ Sistem terhubung dengan MySQL Database melalui kelas DatabaseConnection yang aka
 ### 5. Tampilan Data Terstruktur
 Seluruh data tiket ditampilkan dalam format tabel dengan kolom utama: No, Asal - Tujuan, Transportasi, Harga, dan Jadwal.
 
-## 3. Penerapan 5 pilar OOP
+## 4. Penerapan 5 pilar OOP
 
 Program ini menerapkan 5 pilar utama Pemrograman Berorientasi Objek (OOP) sebagai berikut:
 
@@ -180,7 +187,7 @@ public interface Cetak {
 }
 ```
 
-## 4. Struktur Folder / Package
+## 5. Struktur Folder / Package
 Dibawah ini adalah Struktur Folder dan Package
 
 ``` bash
@@ -214,7 +221,7 @@ Foto Struktur Package dari Neatbeans
 
 <img width="575" height="559" alt="image" src="https://github.com/user-attachments/assets/9dc30fea-889b-4cf3-a129-e1f436b0cbec" />
 
-## 5. Antarmuka Program (GUI)
+## 6. Antarmuka Program (GUI)
 
 Program PETIR (Program Transportasi Terintegrasi) memiliki antarmuka grafis berbasis Java Swing yang dirancang dengan pendekatan clean design, menggunakan kombinasi warna hijau muda dan putih untuk menciptakan tampilan yang tenang, ringan, dan konsisten.
 Setiap halaman memiliki tata letak yang seragam, font yang mudah dibaca, serta tombol-tombol dengan fungsi yang jelas untuk memudahkan navigasi pengguna.

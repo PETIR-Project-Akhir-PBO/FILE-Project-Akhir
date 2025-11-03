@@ -224,6 +224,86 @@ Struktur Package dari Neatbeans
 
 <img width="575" height="559" alt="image" src="https://github.com/user-attachments/assets/9dc30fea-889b-4cf3-a129-e1f436b0cbec" />
 
+## ✨Penerapan Nilai Tambah
+
+### 1. Penerapan Pola Desain DAO (Data Access Object)
+
+Program PETIR menerapkan pola desain DAO sebagai bentuk pemisahan logika bisnis dengan logika akses data.
+DAO digunakan untuk mengatur semua interaksi antara program dengan database MariaDB/MySQL.
+Dengan pendekatan ini, struktur kode menjadi lebih modular, mudah dipelihara, dan fleksibel apabila terjadi perubahan di sistem basis data.
+
+Contoh penerapan DAO pada program PETIR adalah
+
+``` bash
+package DAO;
+
+import java.sql.*;
+
+public class AdminDAO {
+
+    private final Connection conn;
+
+    public AdminDAO(Connection conn) {
+        this.conn = conn;
+    }
+
+    public boolean isAdmin(int idPengguna) {
+        String sql = "SELECT akses FROM admin WHERE id_pengguna=?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setInt(1, idPengguna);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                String akses = rs.getString("akses");
+                return akses != null && akses.equalsIgnoreCase("crud");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+}
+
+```
+
+### 2. Penerapan Arsitektur MVC (Model - View - Controller)
+
+Struktur folder pada proyek PETIR disusun berdasarkan arsitektur MVC, di mana:
+
+- Model → berisi representasi data dan logika entitas (misalnya Tiket, Rute, Transportasi, Pengguna, Penumpang, dll).
+
+- View → direpresentasikan melalui tampilan teks berbasis terminal (CLI), yang menampilkan hasil pemrosesan kepada pengguna.
+
+- Controller (Service) → menghubungkan antara Model dan View, memproses input dari pengguna, dan memanggil fungsi DAO untuk akses data.
+
+Contoh diagram pada program/package MVC PETIR
+
+``` bash
+src/
+├── ConnectDB/
+│   └── DatabaseConnection.java     ← Koneksi ke database
+│
+├── DAO/                            ← Data Access Object
+│   ├── TiketDAO.java
+│   ├── RuteDAO.java
+│   ├── TransportasiDAO.java
+│   ├── PenggunaDAO.java
+│   └── PenumpangDAO.java
+│
+├── Model/                          ← Model (Representasi Data)
+│   ├── Tiket.java
+│   ├── Rute.java
+│   ├── Transportasi.java
+│   ├── Pengguna.java
+│   ├── Penumpang.java
+│   └── Cetak.java
+│
+├── Service/                        ← Controller
+│   └── Service.java
+│
+└── Main/
+    └── Main.java                   ← Entry point program
+```
+
 ## 💻 Antarmuka Program (GUI)
 
 Program PETIR (Program Transportasi Terintegrasi) memiliki antarmuka grafis berbasis Java Swing yang dirancang dengan pendekatan clean design, menggunakan kombinasi warna hijau muda dan putih untuk menciptakan tampilan yang tenang, ringan, dan konsisten. Setiap halaman memiliki tata letak yang seragam, font yang mudah dibaca, serta tombol-tombol dengan fungsi yang jelas untuk memudahkan navigasi pengguna.

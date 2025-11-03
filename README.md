@@ -1,4 +1,4 @@
-# ⚡ PETIR (Pelayanan Transportasi terintegrasi) 🚉
+# ⚡ PETIR (Pelayanan Transportasi Terintegrasi) 🚉
 
 <img width="1536" height="1024" alt="Anu" src="https://github.com/user-attachments/assets/fecf95f3-53f3-411b-807b-31348170ff13" />
 

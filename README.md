@@ -1,5 +1,6 @@
 # ⚡ PETIR (Pelayanan Transportasi terintegrasi) 🚉
 
+<img width="1536" height="1024" alt="Anu" src="https://github.com/user-attachments/assets/fecf95f3-53f3-411b-807b-31348170ff13" />
 
 ## ⚙ Deskripsi Program
 
@@ -7,7 +8,7 @@ Program PETIR merupakan sistem manajemen transportasi darat berbasis Java yang t
 Program ini memiliki dua peran utama yaitu Admin dan Penumpang. Admin dapat menambah, mengubah, dan menghapus data tiket, sedangkan penumpang dapat melihat, mencari, dan membeli tiket sesuai rute dan jadwal yang tersedia.
 Seluruh komponen dalam sistem PETIR dibangun menggunakan pendekatan Object-Oriented Programming (OOP) secara menyeluruh untuk memastikan keamanan, efisiensi, serta kemudahan pengembangan di masa mendatang.
 
-## ✨ Flowchart dan Usecase
+## ✨ Flowchart & Usecase
 
 
 ``` bash

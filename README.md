@@ -16,6 +16,9 @@ https://drive.google.com/file/d/1vuFVS61Yx1Rh_dnzgd2hc7dsrvdid3cK/view?usp=shari
 ```
 
 ## ✨ Slide Decks
+``` bash
+https://bit.ly/3JpGg8R
+```
 
 ## 🔍 Fitur Program
 

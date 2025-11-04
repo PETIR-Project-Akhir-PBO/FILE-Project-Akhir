@@ -51,7 +51,7 @@ public class TopUpDialog extends JDialog {
         try {
             int nominal = Integer.parseInt(s);
             if (nominal <= 0) {
-                JOptionPane.showMessageDialog(this, "Nominal harus > 0.");
+                JOptionPane.showMessageDialog(this, "Nominal harus lebih dari 0.");
                 return;
             }
             boolean ok = service.tambahSaldo(userId, nominal);
@@ -60,7 +60,7 @@ public class TopUpDialog extends JDialog {
                 if (onDone != null) onDone.run();
                 dispose();
             } else {
-                JOptionPane.showMessageDialog(this, "Gagal menambah saldo. (Mungkin melebihi batas)");
+                JOptionPane.showMessageDialog(this, "Gagal menambah saldo. (Sudah melebihi batas)");
             }
         } catch (NumberFormatException nfe) {
             JOptionPane.showMessageDialog(this, "Nominal harus angka.");

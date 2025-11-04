@@ -77,6 +77,7 @@ public class RegisterForm extends JFrame {
         g.gridy = 3; g.gridx = 0;
         card.add(label("Password"), g);
         g.gridx = 1; txtPass.setPreferredSize(new Dimension(260, 36));
+        txtPass.setEchoChar((char) 0);
         txtPass.setToolTipText("Minimal 6 karakter disarankan.");
         card.add(txtPass, g);
 
